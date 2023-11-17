@@ -76,7 +76,7 @@ WSGI_APPLICATION = "death_star.wsgi.application"
 DATABASES = {
     "sqlite3": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        "NAME": os.path.join(BASE_DIR, "db1.sqlite3"),
     },
     "default": {
         'ENGINE': 'djongo',
@@ -86,7 +86,7 @@ DATABASES = {
             'username': 'admin',
             'password': 'admin123'
         },
-        'NAME': 'empire4',
+        'NAME': 'empire6',
     }
 }
 

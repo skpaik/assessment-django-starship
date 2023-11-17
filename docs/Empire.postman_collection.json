@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "a61822d3-9a18-4776-bffe-40debf48d6d7",
+		"name": "Empire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25703404"
+	},
+	"item": [
+		{
+			"name": "evacuate Units By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": 422,\n  \"films\": 69,\n  \"species\": 1080\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/evacuate/12/planet/2/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"evacuate",
+						"12",
+						"planet",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evacuate Units By Name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": 422,\n  \"films\": 69,\n  \"species\": 1080\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/evacuate/12/planet/Yavin IV",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"evacuate",
+						"12",
+						"planet",
+						"Yavin IV"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Species by starship id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": 422,\n  \"films\": 69,\n  \"species\": 1080\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/starship/3/species/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"starship",
+						"3",
+						"species",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Species",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": 422,\n  \"films\": 69,\n  \"species\": 1080\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/species?starship_id=9&creator=Rick McCallum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"species"
+					],
+					"query": [
+						{
+							"key": "starship_id",
+							"value": "9"
+						},
+						{
+							"key": "creator",
+							"value": "Rick McCallum"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Species by creator name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": 422,\n  \"films\": 69,\n  \"species\": 1080\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/starship/creator/Gary Kurtz/species",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"starship",
+						"creator",
+						"Gary Kurtz",
+						"species"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "starships POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"New Starship\",\n  \"model\": \"Model XYZ\",\n  \"manufacturer\": \"ABC Corp\",\n  \"starship_class\": \"Transport\",\n  \"crew_capacity\": 50\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/starships/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"starships",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
